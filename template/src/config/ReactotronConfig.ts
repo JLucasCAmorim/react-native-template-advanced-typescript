@@ -4,17 +4,19 @@ import sagaPlugin from 'reactotron-redux-saga';
 
 declare global {
   interface Console {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     tron: any;
   }
 }
 
-if (process.env.NODE_ENV === 'development') {
+if (__DEV__) {
   console.tron = Reactotron.configure()
     .use(reactotronRedux())
     .use(sagaPlugin({except: ['']}))
+    .useReactNative()
     .connect();
 
   if (console.tron) {
-    console.tron.clear!();
+    console.tron.clear?.();
   }
 }

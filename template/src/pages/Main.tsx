@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import {
   Text,
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const Main = () => (
+const Main: FC = () => (
   <ImageBackground
     source={{
       uri: 'https://s3-sa-east-1.amazonaws.com/rocketseat-cdn/background.png',

@@ -6,15 +6,19 @@ import sagas from './sagas';
 
 const middlewares = [];
 
-const sagaMonitor = __DEV__ && typeof console.tron !== 'undefined' ? console.tron.createSagaMonitor() : null;
+const sagaMonitor =
+  __DEV__ && typeof console.tron !== 'undefined'
+    ? console.tron.createSagaMonitor()
+    : null;
 
 const sagaMiddleware = createSagaMiddleware({sagaMonitor});
 
 middlewares.push(sagaMiddleware);
 
-const composer = __DEV__ &&  typeof console.tron !== 'undefined'
-  ? compose(applyMiddleware(...middlewares), console.tron.createEnhancer())
-  : compose(applyMiddleware(...middlewares));
+const composer =
+  __DEV__ && typeof console.tron !== 'undefined'
+    ? compose(applyMiddleware(...middlewares), console.tron.createEnhancer())
+    : compose(applyMiddleware(...middlewares));
 
 const store = createStore(reducers, composer);
 
