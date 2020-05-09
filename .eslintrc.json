@@ -1,0 +1,81 @@
+{
+    "env": {
+        "es6": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:@typescript-eslint/recommended",
+        "prettier/@typescript-eslint",
+        "plugin:prettier/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly",
+        "__DEV__": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": "error",
+        "react/jsx-one-expression-per-line": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/jsx-closing-bracket-location": "off",
+        "react/prop-types": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/jsx-filename-extension": [1, {"extensions": [".tsx"]}],
+        "import/prefer-default-export": "off",
+        "no-unused-expressions": "off",
+        "no-template-curly-in-string": "off",
+        "react/jsx-wrap-multilines": ["error", {"declaration": false, "assignment": false}],
+        "no-console": ["error", { "allow": ["warn", "error", "tron", "log"] }],
+        "no-unused-vars": [
+            "error",
+            {
+                "argsIgnorePattern": "^_"
+            }
+        ],
+        "react/jsx-curly-newline": "off",
+        "react-native/no-color-literals": "off",
+        "react-native/sort-styles": "off",
+        "global-require": "off",
+        "react-native/no-raw-text": "off",
+        "@typescript-eslint/explicit-function-return-type": [
+            "error",
+            {
+                "allowExpressions": true
+            }
+        ],
+        "@typescript-eslint/camelcase": "off",
+        "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["axioscfg"] }],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never",
+                "tsx": "never"
+            }
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {},
+            "babel-plugin-root-import": {
+                "rootPathSuffix": "src"
+            }
+        }
+    }
+}
