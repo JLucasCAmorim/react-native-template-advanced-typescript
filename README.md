@@ -7,11 +7,11 @@
 
 <!-- PROJECT SHIELDS -->
 
-[![npm](https://img.shields.io/npm/v/react-native-template-rocketseat-advanced.svg?label=npm%20package)](https://www.npmjs.com/package/react-native-template-rocketseat-advanced)
-[![npm](https://img.shields.io/npm/dt/react-native-template-rocketseat-advanced.svg)](https://www.npmjs.com/package/react-native-template-rocketseat-advanced)
-[![GitHub issues](https://img.shields.io/github/issues-raw/rocketseat/react-native-template-rocketseat-advanced.svg)](https://github.com/Rocketseat/react-native-template-rocketseat-advanced/issues)
-[![GitHub last commit](https://img.shields.io/github/last-commit/rocketseat/react-native-template-rocketseat-advanced.svg)](https://github.com/Rocketseat/react-native-template-rocketseat-advanced/commits/master)
-[![NPM](https://img.shields.io/npm/l/react-native-template-rocketseat-advanced.svg)](https://choosealicense.com/licenses/mit)
+[![npm](https://img.shields.io/npm/v/react-native-template-advanced-typescript.svg?label=npm%20package)](https://www.npmjs.com/package/react-native-template-advanced-typescript)
+[![npm](https://img.shields.io/npm/dt/react-native-template-advanced-typescript.svg)](https://www.npmjs.com/package/react-native-template-advanced-typescript)
+[![GitHub issues](https://img.shields.io/github/issues-raw/JLucasCAmorim/react-native-template-advanced-typescript.svg)](https://github.com/JLucasCAmorim/react-native-template-advanced-typescript/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/JLucasCAmorim/react-native-template-advanced-typescript.svg)](https://github.com/JLucasCAmorim/react-native-template-advanced-typescript/commits/master)
+[![NPM](https://img.shields.io/npm/l/react-native-template-advanced-typescript.svg)](https://choosealicense.com/licenses/mit)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -134,7 +134,7 @@ Serão explicados os arquivos e diretórios na seção de [Edição](#edição).
 react-native init AwesomeExample --template react-native-template-advanced-typescript
 ```
 
-2. Depois do projeto criado você pode deletar o arquivo `App.js` da raiz, pois o arquivo `index.js` agora aponta para a pasta **src**.
+2. Depois do projeto criado você pode deletar o arquivo `App.tsx` da raiz, pois o arquivo `index.tsx` agora aponta para a pasta **src**.
 
 Com isso o projeto será criado com todas as dependências do template devidamente instaladas e linkadas, tal como os arquivos de configuração que são copiados para o projeto.
 
@@ -208,9 +208,9 @@ Nesta seção haverão instruções caso você queira editar o template, explica
 
     - **index.js** - Arquivo responsável por executar a configuração para o funcinamento do Redux + Redux Saga, dentre suas funções estão: criar um **Middleware** para monitorar as Actions disparadas na aplicação, aplicar o middleware criado juntamente com um Enhancer que monitora o fluxo de uma função do **Saga**, criar o store global da aplicação combinando os reducers existentes e exportar o state criado;
 
-  - **index.js** - Arquivo responsável por centralizar o código do diretório `src`, nele é inserido o HOC Provider do `react-redux` que é o responsável por disponilizar o state global para a aplicação, e dentro do Provider são chamadas as rotas tal como qualquer outra configuração que precise ser executada na inicialização da aplicação, ele é como um _Entry Point_ do diretório `src`;
+  - **index.tsx** - Arquivo responsável por centralizar o código do diretório `src`, nele é inserido o HOC Provider do `react-redux` que é o responsável por disponilizar o state global para a aplicação, e dentro do Provider são chamadas as rotas tal como qualquer outra configuração que precise ser executada na inicialização da aplicação, ele é como um _Entry Point_ do diretório `src`;
 
-  - **routes.js** - Arquivo com as configurações de navegação da aplicação, nele são criados os Navigators disponibilizados na biblioteca React Navigation;
+  - **routes.ts** - Arquivo com as configurações de navegação da aplicação, nele são criados os Navigators disponibilizados na biblioteca React Navigation;
 
 - **.editorconfig** - Arquivo destinado à configuração do plugin Editor Config, que padroniza algumas configurações para o editor em diferentes ambientes;
 
@@ -222,7 +222,7 @@ Nesta seção haverão instruções caso você queira editar o template, explica
 
 - **devDependencies.json** - Arquivo contendo apenas um objeto com a lista de dependências de desenvolvimento que devem ser instaladas na aplicação, vale lembrar que as dependências de desenvolvimento que já vem por padrão no projeto como `@babel/core`, `@babel/runtime`, entre outras, não precisam estar nessa lista, a menos que você queira gerenciar a versão dessas libs;
 
-- **index.js** - Arquivo raiz da aplicação, também chamado de _Entry Point_, é o primeiro arquivo chamado no momento do build e execução da aplicação, nele é chamado o arquivo `src/index.js` que por sua vez chama as rotas da aplicação;
+- **index.tsx** - Arquivo raiz da aplicação, também chamado de _Entry Point_, é o primeiro arquivo chamado no momento do build e execução da aplicação, nele é chamado o arquivo `src/index.tsx` que por sua vez chama as rotas da aplicação;
 
 - **jsconfig.json** - Arquivo de configuração do JavaScript no Editor, ele é o responsável por ativar o Auto Complete de códigos JavaScript na aplicação;
 
