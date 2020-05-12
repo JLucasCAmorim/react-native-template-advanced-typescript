@@ -1,6 +1,6 @@
 {
   "name": "react-native-template-advanced-typescript",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Clean and minimalist React Native & Redux template for a quick start with TypeScript.",
   "scripts": {
     "prepublishOnly": "npm --no-git-tag-version version $TRAVIS_TAG"
