@@ -91,34 +91,29 @@ Antes de seguirmos para as configurações e uso do template, é ideal que você
 A estrutura de arquivos está da seguinte maneira:
 
 ```bash
-rocketseat-advanced
+template-advanced
 ├── src/
 │   ├── config/
-│   │   └── ReactotronConfig.js
-│   ├── images/
-│   │   ├── rocketseat_logo_roxa.png
-│   │   └── rocketseat_logo.png
+│   │   └── ReactotronConfig.ts
 │   ├── pages/
 │   │   └── Main/
-│   │       └── index.js
+│   │       └── index.tsx
 │   ├── services/
-│   │   └── api.js
+│   │   └── api.ts
 │   ├── store/
 │   │   ├── ducks/
-│   │   │   └── index.js
+│   │   │   └── index.ts
 │   │   ├── sagas/
-│   │   │   └── index.js
-│   │   └── index.js
-│   ├── index.js
-│   └── routes.js
+│   │   │   └── index.ts
+│   │   └── index.ts
+│   ├── index.tsx
+│   └── routes.ts
 ├── .editorconfig
 ├── .eslintrc.json
 ├── .gitignore
 ├── babel.config.js
-├── dependencies.json
-├── devDependencies.json
 ├── index.js
-├── jsconfig.js
+├── tsconfig.js
 ├── LICENSE
 ├── package.json
 └── README.md
