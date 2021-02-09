@@ -126,7 +126,7 @@ Serão explicados os arquivos e diretórios na seção de [Edição](#edição).
 1. Para instalar e utilizar esse template o processo é bem simples, basta criar um projeto novo utilizando o comando:
 
 ```sh
-react-native init AwesomeExample --template react-native-template-advanced-typescript
+react-native init AwesomeExample --template advanced-typescript
 ```
 
 2. Depois do projeto criado você pode deletar o arquivo `App.tsx` da raiz, pois o arquivo `index.tsx` agora aponta para a pasta **src**.
@@ -251,4 +251,3 @@ npm login
 ## Licença
 
 Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
-
