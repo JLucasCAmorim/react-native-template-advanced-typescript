@@ -94,12 +94,13 @@ A estrutura de arquivos está da seguinte maneira:
 template-advanced
 ├── src/
 │   ├── config/
-│   │   └── ReactotronConfig.ts
+│   │   ├── axios.ts
+│   │   ├── reactotron.ts
 │   ├── pages/
 │   │   └── Main/
 │   │       └── index.tsx
 │   ├── services/
-│   │   └── api.ts
+│   │   └── storage.ts
 │   ├── store/
 │   │   ├── ducks/
 │   │   │   └── index.ts
